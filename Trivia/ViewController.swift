@@ -17,26 +17,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var answr4Button: UIButton!
     
     var currentQuestion: questionPick?
+    var countQuestions = 0
+    let amountQuestions = category.allCases.count
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("View did load")
         
-        let ctg = category.allCases.randomElement()
+        if countQuestions < amountQuestions{
+            let ctg = category.allCases.randomElement()
+            
+            let qstPick = questionPick(
+                category: ctg!,
+                question: ctg!.question)
+            
+            currentQuestion = qstPick
+            countQuestions += 1
+            updateUI()
+            
+        }
+        else {
+            exit(0)
+        }
         
-        let qstPick = questionPick(
-            category: ctg!,
-            question: ctg!.question)
-        
-        currentQuestion = qstPick
-        
-        updateUI()
     }
     
     func updateUI() {
         if let currentQuestion = currentQuestion {
-            //questionLabel.text = "Question: \(String(currentQuestion.questionNum))/3"
+            questionLabel.text = "Question: \(countQuestions)/\(amountQuestions)"
             categoryLabel.text = currentQuestion.category.rawValue
             qustionTextView.text = currentQuestion.category.question
             answ1Button.setTitle(currentQuestion.category.options[0], for: .normal)
@@ -45,5 +54,21 @@ class ViewController: UIViewController {
             answr4Button.setTitle(currentQuestion.category.options[3], for: .normal)
         }
     }
-
+    
+    
+    @IBAction func answ1Tapped(_ sender: Any) {
+        viewDidLoad()
+    }
+    
+    @IBAction func answ2Tapped(_ sender: Any) {
+        viewDidLoad()
+    }
+    
+    @IBAction func answ3Tapped(_ sender: Any) {
+        viewDidLoad()
+    }
+    
+    @IBAction func answ4Tapped(_ sender: Any) {
+        viewDidLoad()
+    }
 }

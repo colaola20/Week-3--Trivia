@@ -53,6 +53,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answ1Tapped:" destination="PTT-vd-xGA" eventType="touchUpInside" id="T8t-fN-CNT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-F9-Ekh">
                                         <rect key="frame" x="0.0" y="65.000000000000057" width="353" height="50"/>
@@ -65,6 +68,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answ2Tapped:" destination="PTT-vd-xGA" eventType="touchUpInside" id="KWi-Fi-I1P"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-Mx-k4T">
                                         <rect key="frame" x="0.0" y="130.00000000000006" width="353" height="50"/>
@@ -77,6 +83,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answ3Tapped:" destination="PTT-vd-xGA" eventType="touchUpInside" id="slw-mD-h8x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJs-pN-OMS">
                                         <rect key="frame" x="0.0" y="195.00000000000006" width="353" height="50"/>
@@ -89,6 +98,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answ4Tapped:" destination="PTT-vd-xGA" eventType="touchUpInside" id="j3u-kw-Q2H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
