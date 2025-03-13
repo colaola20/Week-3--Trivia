@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PTT-vd-xGA">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0CH-p8-1Ep">
+            <objects>
+                <viewController id="PTT-vd-xGA" customClass="ViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMF-7g-iRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question: 3/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-BL-lZ7">
+                                <rect key="frame" x="100.33333333333333" y="79" width="192.66666666666669" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment: Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdW-uh-Sdo">
+                                <rect key="frame" x="101.00000000000001" y="119.33333333333331" width="191.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" editable="NO" text="What is the last song on the first Panic! At the Disco album?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1Q-CN-2oM">
+                                <rect key="frame" x="20" y="173.33333333333337" width="353" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Kk5-HN-mHQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7WL-WP-OuK">
+                                <rect key="frame" x="20" y="463.33333333333326" width="353" height="245"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltc-zn-0uZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fna-El-njH"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="I Write Sins Not Tragedies">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-F9-Ekh">
+                                        <rect key="frame" x="0.0" y="65.000000000000057" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="c74-SG-q6d"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-Mx-k4T">
+                                        <rect key="frame" x="0.0" y="130.00000000000006" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oyx-hn-p6M"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Nails for Breakfast, Tacks for Snacks">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJs-pN-OMS">
+                                        <rect key="frame" x="0.0" y="195.00000000000006" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RS8-mr-goT"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Build God, Then We'll Talk">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aOa-AN-g3d"/>
+                        <color key="backgroundColor" red="0.70623182482943891" green="0.91931467151766388" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.68597984496741371" green="0.97467152645049804" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JdW-uh-Sdo" firstAttribute="top" secondItem="MKR-BL-lZ7" secondAttribute="bottom" constant="2" id="54r-WF-7iY"/>
+                            <constraint firstItem="C1Q-CN-2oM" firstAttribute="leading" secondItem="aOa-AN-g3d" secondAttribute="leading" constant="20" id="5eG-M6-tGJ"/>
+                            <constraint firstItem="MKR-BL-lZ7" firstAttribute="centerX" secondItem="dMF-7g-iRQ" secondAttribute="centerX" id="Fdg-kM-uFW"/>
+                            <constraint firstItem="7WL-WP-OuK" firstAttribute="centerX" secondItem="dMF-7g-iRQ" secondAttribute="centerX" id="OQ6-j8-uPH"/>
+                            <constraint firstItem="C1Q-CN-2oM" firstAttribute="top" secondItem="JdW-uh-Sdo" secondAttribute="bottom" constant="30" id="PyC-di-hCE"/>
+                            <constraint firstItem="C1Q-CN-2oM" firstAttribute="centerX" secondItem="dMF-7g-iRQ" secondAttribute="centerX" id="Ryh-pq-8wQ"/>
+                            <constraint firstItem="aOa-AN-g3d" firstAttribute="trailing" secondItem="C1Q-CN-2oM" secondAttribute="trailing" constant="20" id="SQD-Fl-WtZ"/>
+                            <constraint firstItem="JdW-uh-Sdo" firstAttribute="centerX" secondItem="dMF-7g-iRQ" secondAttribute="centerX" id="SXL-oN-YLl"/>
+                            <constraint firstItem="aOa-AN-g3d" firstAttribute="trailing" secondItem="7WL-WP-OuK" secondAttribute="trailing" constant="20" id="TR6-Yd-kiV"/>
+                            <constraint firstItem="C1Q-CN-2oM" firstAttribute="top" secondItem="JdW-uh-Sdo" secondAttribute="bottom" constant="30" id="U4D-0o-Z9y"/>
+                            <constraint firstItem="C1Q-CN-2oM" firstAttribute="top" secondItem="JdW-uh-Sdo" secondAttribute="bottom" constant="30" id="fE7-ck-wZp"/>
+                            <constraint firstItem="7WL-WP-OuK" firstAttribute="top" secondItem="C1Q-CN-2oM" secondAttribute="bottom" constant="40" id="gKz-av-dvE"/>
+                            <constraint firstItem="7WL-WP-OuK" firstAttribute="leading" secondItem="aOa-AN-g3d" secondAttribute="leading" constant="20" id="oO5-mg-tgk"/>
+                            <constraint firstItem="MKR-BL-lZ7" firstAttribute="top" secondItem="aOa-AN-g3d" secondAttribute="top" constant="20" id="pfp-L5-ghQ"/>
+                            <constraint firstItem="aOa-AN-g3d" firstAttribute="trailing" secondItem="C1Q-CN-2oM" secondAttribute="trailing" constant="20" id="rM3-iF-4vE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answ1Button" destination="ltc-zn-0uZ" id="OyO-QV-1ax"/>
+                        <outlet property="answ2Button" destination="JaL-F9-Ekh" id="eAu-k6-zSv"/>
+                        <outlet property="answ3Button" destination="0sO-Mx-k4T" id="E2D-5u-1Gy"/>
+                        <outlet property="answr4Button" destination="VJs-pN-OMS" id="vVA-0z-CaJ"/>
+                        <outlet property="categoryLabel" destination="JdW-uh-Sdo" id="xQ8-Zh-Whm"/>
+                        <outlet property="questionLabel" destination="MKR-BL-lZ7" id="Rw4-LS-oyL"/>
+                        <outlet property="qustionTextView" destination="C1Q-CN-2oM" id="UbJ-W4-eaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzQ-eb-pLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4515.2671755725187" y="-1599.2957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
